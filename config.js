@@ -46,7 +46,7 @@ var config = {
             hidden: false,
             title: 'CityNorth Project',
             image: '',
-            description: '<p>The clearest example of that momentum is <b>CityNorth</b>, a 96-acre mixed-use district next to Desert Ridge Marketplace. Republic Services is putting up a 240,000-square-foot headquarters on a seven-acre site just off 56th Street and the 101, replacing its longtime campus at Allied Way. Across the street, Sprouts Farmers Market has broken ground on a seven-acre corporate campus. The plan calls for a 144,500-square-foot office building paired with a flagship grocery store, high-end retail, and structured parking. Sprouts expects to move in by August 2026. </p>',
+            description: '<p>The clearest example of that momentum is <b>CityNorth</b>, a 96-acre mixed-use district next to Desert Ridge Marketplace. Republic Services is putting up a 240,000-square-foot headquarters on a seven-acre site just off 56th Street and the 101, replacing its longtime campus at Allied Way. Across the street, Sprouts Farmers Market has broken ground on a seven-acre corporate campus. The plan calls for a 144,500-square-foot office building paired with a 25,000-square-foot flagship grocery store, high-end retail, and structured parking. Sprouts expects to move in by August 2026. </p>',
             location: {
                 center: [-111.97, 33.67363306769817 ],
                 zoom: 15.5,
