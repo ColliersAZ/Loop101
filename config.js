@@ -72,7 +72,7 @@ var config = {
             description: '<p>That wave of investment is spilling over to nearby land once floated for a Coyotes hockey arena. In June 2025, Mortenson closed on 217 acres northwest of Scottsdale Road and the 101, paying $136 million at auction. Its proposal envisions at least five million square feet of mixed-use development, starting with a 350,000-square-foot speculative office campus.</p><p>ASM International is also making a major move in the corridor. The semiconductor equipment maker is doubling its Arizona footprint with a new North American headquarters planned near Loop 101 and Hayden Road. The $300 million, 250,000-square-foot project will bring more than 800 jobs and further cement Arizona’s role in the global chip supply chain.</p> ',
             location: {
                 center: [-111.93300160953918,33.66],
-                zoom: 14.5,
+                zoom: 14,
                 pitch: 0,
                 bearing: 0
             },
@@ -95,7 +95,7 @@ var config = {
             image: '',
             description: '<p>Just a few miles east on the 101, Cavasson has become Scottsdale’s clearest example of flight-to-quality. The $1 billion, 135-acre campus at Hayden Road combines 1.8 million square feet of office with 1,600 homes, a hotel, retail, and restaurants. At its core, Cavasson East (18700 N. Hayden Rd.) is a five-story, 440,000-square-foot Class A building now fully leased to Nationwide Insurance, Wells Fargo, and Sigma/Bar-S Foods. Two more five-story offices house Choice Hotels’ tech HQ and Meritage Homes, supported by a six-story garage and retail anchored by PITCH, while the Hilton at Cavasson provides hospitality.</p><p>“Achieving 100% lease occupancy in an extremely tough global office market is a testament to the strength of our project,” said Brian J. Ellis, president of Nationwide Realty Investors. “The fact that top employers and best-in-class brands continue to choose Cavasson is a clear indicator of the flight-to-quality trend.”</p><p>Cavasson sits just a short hop from Mortenson’s planned mixed-use site along the 101 and on the diagonal from Axon’s proposed headquarters expansion. Axon’s plan, enabled by Senate Bill 1543, allows 1,900 housing units and a hotel on its light-industrial parcel without a citywide vote. The move has stirred pushback from residents and fueled debate over how much sway large companies should have in shaping Scottsdale’s zoning rules.</p>',
             location: {
-                center: [-111.90919129839082, 33.65605347993039 ],
+                center: [-111.915, 33.659 ],
                 zoom: 15,
                 pitch: 0,
                 bearing: 0
@@ -137,7 +137,7 @@ var config = {
             id: 'mayo',
             alignment: 'left',
             hidden: false,
-           title: '<b style="color:#2563eb;">Mayo</b> and <b style="color:#2563eb;">Banner</b> reshape the region’s healthcare future',
+           title: '<b style="color:#2563eb;">Mayo</b> and <b style="color:#2563eb;">Banner</b> reshape regional healthcare',
 
             image: '',
             description: '<p>Healthcare is emerging as a powerful driver of North Scottsdale’s growth. At Mayo Boulevard,  <b style="color:#2563eb;">Mayo Clinic</b> has broken ground on a $1.9 billion expansion of its Phoenix campus, adding 1.2 million square feet of new medical space with operating rooms, inpatient beds, and a state-of-the-art procedural building. Completion is projected for 2031, cementing the site as one of the Southwest’s premier healthcare destinations.</p> <p>Just up the road, <b style="color:#2563eb;">Banner Health</b> is preparing a $400 million, 640,000-square-foot hospital with 300 beds at the northeast corner of Hayden Road and Loop 101. The facility represents the second phase of development on a 48-acre parcel the system purchased in March 2023 for $57.6 million. Together, these projects are reshaping the region’s healthcare landscape and fueling long-term demand for surrounding medical office space.</p>',
@@ -167,7 +167,7 @@ var config = {
             description: '<p>South of Cavasson, the Scottsdale Airpark continues to prove why it’s one of the Valley’s most flexible job hubs, mixing steady office demand with bold experiments in industrial space.</p><p>On the office side, Axis Raintree (8605 E Raintree Dr) has found traction after carving up its larger floorplates into smaller suites. Developers are also chasing big scale. LGE’s warehouse at 7501 E Redfield Rd is still sitting vacant as the team holds out for a single large distribution user. </p><p>And just up the 101, the former CrackerJax site is being remade into The Parque, a billion-dollar mixed-use district blending housing, offices, retail, and public space at a scale Scottsdale hasn’t seen in decades. With City Council approval in 2023 and demolition finished in summer 2025, the first phase will bring apartments, condos, restaurants, and a 1.7-acre central park—marking North Scottsdale’s shift toward walkable, integrated urban districts.</p>',
             location: {
                 center: [ -111.89, 33.62315312134081  ],
-                zoom: 14,
+                zoom: 13.5,
                 pitch: 0,
                 bearing: 0
             },
@@ -186,7 +186,7 @@ var config = {
             hidden: true,
             
             location: {
-                center: [ -111.9,33.637356778978294],
+                center: [ -111.93,33.645],
                 zoom: 12,
                 pitch: 0,
                 bearing: 0
