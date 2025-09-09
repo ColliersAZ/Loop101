@@ -194,6 +194,36 @@
     projection:config.projection
   });
 
+  // Turn map interactions on/off
+function setMapInteractive(on) {
+  var m = map;
+  var canvas = m.getCanvas ? m.getCanvas() : null;
+
+  if (on) {
+    if (m.scrollZoom && m.scrollZoom.enable) m.scrollZoom.enable();
+    if (m.boxZoom && m.boxZoom.enable) m.boxZoom.enable();
+    if (m.dragRotate && m.dragRotate.enable) m.dragRotate.enable();
+    if (m.dragPan && m.dragPan.enable) m.dragPan.enable();
+    if (m.keyboard && m.keyboard.enable) m.keyboard.enable();
+    if (m.doubleClickZoom && m.doubleClickZoom.enable) m.doubleClickZoom.enable();
+    if (m.touchZoomRotate && m.touchZoomRotate.enable) m.touchZoomRotate.enable();
+    if (canvas) canvas.style.cursor = 'grab';
+  } else {
+    if (m.scrollZoom && m.scrollZoom.disable) m.scrollZoom.disable();
+    if (m.boxZoom && m.boxZoom.disable) m.boxZoom.disable();
+    if (m.dragRotate && m.dragRotate.disable) m.dragRotate.disable();
+    if (m.dragPan && m.dragPan.disable) m.dragPan.disable();
+    if (m.keyboard && m.keyboard.disable) m.keyboard.disable();
+    if (m.doubleClickZoom && m.doubleClickZoom.disable) m.doubleClickZoom.disable();
+    if (m.touchZoomRotate && m.touchZoomRotate.disable) m.touchZoomRotate.disable();
+    if (canvas) canvas.style.cursor = '';
+  }
+}
+
+// Start with interactions OFF
+setMapInteractive(false);
+
+
   var insetMap=null;
   if (config.inset){
     insetMap = new mapboxgl.Map({
@@ -349,7 +379,58 @@
         [-111.91498279232965,33.655656685419046],[-111.91604672997003,33.655887184757745],
         [-111.91609045341866,33.65579013247327]
       ]}},
-      {"type":"Feature","properties":{"name":"Silverleaf Auto Garages","desc":"Located at 9271 E Hidden Spur Trail within DC Ranch Corporate Center..."},"geometry":{"type":"Point","coordinates":[-111.88159818069133,33.64407871950708]}}
+      {"type":"Feature","properties":{"name":"Silverleaf Auto Garages","desc":"Located at 9271 E Hidden Spur Trail within DC Ranch Corporate Center..."},"geometry":{"type":"Point","coordinates":[-111.88159818069133,33.64407871950708]}},
+      {
+      "type": "Feature",
+      "properties": {"name":"Scottsdale Quarter","desc":"Scottsdale Quarter, a 755,000-square-foot mixed-use center with retail, dining, office, and nearly 600 residential units, was acquired by FalconEye Ventures for $645.1 million. The new owner, founded by billionaire George Kurtz, plans to invest $100 million in upgrades, with local operator Vestar managing the property."},
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -111.9253621110699,
+              33.625695561322146
+            ],
+            [
+              -111.9254864846587,
+              33.62283590418906
+            ],
+            [
+              -111.9222134215883,
+              33.622772520872275
+            ],
+            [
+              -111.92215421889725,
+              33.62476555174362
+            ],
+            [
+              -111.92212038878787,
+              33.62555430034463
+            ],
+            [
+              -111.92228108180676,
+              33.626202195579495
+            ],
+            [
+              -111.92279948029322,
+              33.626061762982005
+            ],
+            [
+              -111.9237974685169,
+              33.6258011965738
+            ],
+            [
+              -111.92452481586575,
+              33.6257026036764
+            ],
+            [
+              -111.9253621110699,
+              33.625695561322146
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      }
+    }
     ]};
     sitesFC_cache = sitesFC;
 
@@ -425,6 +506,9 @@
       }
     }
 
+    var all = config.chapters[config.chapters.length - 1].id;
+
+
     scroller.setup({ step:".step", offset:0.5, progress:true })
       .onStepEnter(function(resp){
         var j, idx=-1;
@@ -459,6 +543,16 @@
           var bbox=computeAllSitesBounds(sitesFC_cache);
           if (bbox){ didInitialMobileFit=true; map.fitBounds(bbox,{ padding:{top:40,bottom:40,left:32,right:32}, duration:600 }); }
         }
+
+
+// In onStepEnter:
+if (chapter.id === all) {
+  setMapInteractive(true);   // only last chapter is interactive
+} else {
+  setMapInteractive(false);
+}
+
+
       })
       .onStepExit(function(resp){
         var j, chapter=null;
@@ -468,6 +562,10 @@
           for(j=0;j<chapter.onChapterExit.length;j++){ setLayerOpacity(chapter.onChapterExit[j]); }
         }
         if (resp.element.id==="mayo"){ hideFocusCircles(); setMayoBannerCircled(false); }
+
+        if (resp.element.id === all) {
+  setMapInteractive(false);  // lock again when leaving last
+}
       });
 
     if (config.auto){
