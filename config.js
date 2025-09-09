@@ -6,7 +6,7 @@ var config = {
     theme: 'dark',
     use3dTerrain: false,
     auto: false,
-    title: '',
+    title: '', 
     subtitle: '',
     byline: '',
     footer: '',
