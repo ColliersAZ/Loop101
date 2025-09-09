@@ -14,7 +14,7 @@ var config = {
         {id: 'us-overview',
             alignment: 'middle',
             hidden: false,
-            title: 'North Phoenix’s Loop 101 Corridor Transforms into a Growth Engine',
+            title: 'Loop 101 Corridor Powers North Phoenix Growth',
             subtitle: '',
             image: '',
             description: ` <h5>By Nicole Shih</h5>   
