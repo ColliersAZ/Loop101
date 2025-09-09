@@ -430,6 +430,48 @@ setMapInteractive(false);
         ],
         "type": "Polygon"
       }
+    },
+     {
+      "type": "Feature",
+      "properties": {"name":"One Scottsdale Medical","desc":"Total Building Area: ±101,136 SF. Construction Completed 2024. Site Area: 6.52 Acres."},
+      "geometry": {
+        "coordinates": [-111.92416429102643, 
+          33.66922179196561
+        ],
+        "type": "Point"
+      }
+    },
+    
+    {
+      "type": "Feature",
+      "properties": {"name":"One Scottsdale","desc":"One Scottsdale is a 120-acre mixed-use development located at the intersection of Loop 101 and Scottsdale Road in North Scottsdale. It plans for about 2,000 residential units, 400 hotel rooms, and roughly 2.86 million square feet of total space."},
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -111.92516083443098,
+              33.66971374789209
+            ],
+            [
+              -111.92530558947522,
+              33.658810341476254
+            ],
+            [
+              -111.92105944151484,
+              33.65796692649697
+            ],
+            [
+              -111.92105944151484,
+              33.66971374789209
+            ],
+            [
+              -111.92516083443098,
+              33.66971374789209
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      }
     }
     ]};
     sitesFC_cache = sitesFC;
@@ -483,7 +525,7 @@ setMapInteractive(false);
 
         new mapboxgl.Marker(root).setLngLat(lngLat).addTo(map);
 
-        if (key==="mayo clinic" || key==="banner health"){ dot.classList.add("blue"); }
+        if (key==="mayo clinic" || key==="banner health" || key==="one scottsdale medical"){ dot.classList.add("blue"); }
       })(pointFeatures[i]);
     }
 
