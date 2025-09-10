@@ -78,6 +78,29 @@
       .poi-dot{ width:22px; height:22px; }
       .poi-dot.blue{ width:28px; height:28px; }
     }
+
+
+/* Colliers logo control (upper-left) */
+.mapboxgl-ctrl.colliers-logo-ctrl {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px 12px;              /* space around logo inside box */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+  margin: 14px;                   /* distance from top/left edges */
+}
+.colliers-logo-ctrl img {
+  display: block;
+  height: 40px;                   /* bigger logo */
+  width: auto;
+}
+@media (max-width:600px){
+  .colliers-logo-ctrl img { height: 32px; }
+}
+
+
   </style>
 </head>
 <body>
@@ -193,6 +216,46 @@
     transformRequest:transformRequest,
     projection:config.projection
   });
+
+// Colliers logo control
+function ColliersLogoControl(opts){
+  this._opts = opts || {};
+  this._container = null;
+}
+ColliersLogoControl.prototype.onAdd = function(map){
+  var d = document.createElement('div');
+  d.className = 'mapboxgl-ctrl colliers-logo-ctrl';
+
+  var a = document.createElement('a');
+  a.href = this._opts.href || 'https://www.colliers.com';
+  a.target = (this._opts.newTab === false ? '' : '_blank');
+  a.rel = 'noopener noreferrer';
+  a.title = this._opts.title || 'Colliers';
+
+  var img = document.createElement('img');
+  img.src = this._opts.src || 'colliers-logo.png'; // <-- path to your file
+  img.alt = this._opts.alt || 'Colliers';
+
+  a.appendChild(img);
+  d.appendChild(a);
+  this._container = d;
+  return d;
+};
+ColliersLogoControl.prototype.onRemove = function(){
+  if (this._container && this._container.parentNode){
+    this._container.parentNode.removeChild(this._container);
+  }
+  this._container = null;
+};
+
+// Add logo to upper-left corner
+map.addControl(new ColliersLogoControl({
+  src: 'colliers.png',    // replace with your logo file
+  href: 'https://www.colliers.com/en/united-states/cities/phoenix#f:listingtype=[All%20Listings]&f:location=Arizona',
+  title: 'Colliers'
+}), 'top-left');
+
+
 
   // Turn map interactions on/off
 function setMapInteractive(on) {
