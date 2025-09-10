@@ -6,7 +6,7 @@ var config = {
     theme: 'dark',
     use3dTerrain: false,
     auto: false,
-    title: '', 
+    title: '',
     subtitle: '',
     byline: '',
     footer: '',
@@ -140,7 +140,7 @@ var config = {
            title: '<b style="color:#2563eb;">Mayo</b> and <b style="color:#2563eb;">Banner</b> reshape regional healthcare',
 
             image: '',
-            description: '<p>Healthcare is emerging as a powerful driver of North Scottsdale’s growth. At Mayo Boulevard,  <b style="color:#2563eb;">Mayo Clinic</b> has broken ground on a $1.9 billion expansion of its Phoenix campus, adding 1.2 million square feet of new medical space with operating rooms, inpatient beds, and a state-of-the-art procedural building. Completion is projected for 2031, cementing the site as one of the Southwest’s premier healthcare destinations.</p> <p>Just up the road, <b style="color:#2563eb;">Banner Health</b> is preparing a $400 million, 640,000-square-foot hospital with 300 beds at the northeast corner of Hayden Road and Loop 101. The facility represents the second phase of development on a 48-acre parcel the system purchased in March 2023 for $57.6 million. Together, these projects are reshaping the region’s healthcare landscape and fueling long-term demand for surrounding medical office space.</p>',
+            description: '<p>Healthcare is emerging as a powerful driver of North Scottsdale’s growth. At Mayo Boulevard,  <b style="color:#2563eb;">Mayo Clinic</b> has broken ground on a $1.9 billion expansion of its Phoenix campus, adding 1.2 million square feet of new medical space with operating rooms, inpatient beds, and a state-of-the-art procedural building. Completion is projected for 2031, cementing the site as one of the Southwest’s premier healthcare destinations.</p> <p>Just up the road, <b style="color:#2563eb;">Banner Health</b> is preparing a $400 million, 640,000-square-foot hospital with 300 beds at the northeast corner of Hayden Road and Loop 101. The facility represents the second phase of development on a 48-acre parcel the system purchased in March 2023 for $57.6 million. Together, these projects are reshaping the region’s healthcare landscape and fueling long-term demand for surrounding medical office space.</p><p><b style="color:#2563eb;">One Scottsdale Medical</b>, a new 100,000-square-foot inpatient rehab facility, opened near Loop 101 and Scottsdale Road to address the growing shortage of specialized physical, occupational, and speech therapists in the Valley, while creating around 200 new jobs. </p>',
             location: {
                 center: [-111.94932167167855, 33.66132168419694 ],
                 zoom: 13,
