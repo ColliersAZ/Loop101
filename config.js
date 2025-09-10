@@ -205,9 +205,9 @@ var config = {
             ]
         },
         {id: 'all',
-            alignment: 'middle',
-            hidden: true,
-            
+            alignment: 'right',
+            hidden: false,
+            description:'<span style="font-size: 14px;">© Colliers International, 2025. All rights reserved.</span>',
             location: {
                 center: [ -111.93,33.645],
                 zoom: 12,
