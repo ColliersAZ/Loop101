@@ -86,6 +86,29 @@ var config = {
                 { layer: 'locations', opacity: 0 }
             ]
         },
+         {
+            id: 'one scottsdale',
+            alignment: 'right',
+            hidden: false,
+            title: '',
+            image: '',
+            description: '<b>One Scottsdale</b> is a 120-acre mixed-use development located at the intersection of Loop 101 and Scottsdale Road in North Scottsdale. It plans for about 2,000 residential units, 400 hotel rooms, and roughly 2.86 million square feet of total space.',
+            location: {
+                center: [-111.919, 33.665 ],
+                zoom: 15,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                { layer: 'locations', opacity: 1, color: 'red', duration: 5000 }
+            ],
+            onChapterExit: [
+                { layer: 'locations', opacity: 0 }
+            ]
+        },
 
          {
             id: 'cavasson',
