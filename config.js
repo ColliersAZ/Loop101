@@ -18,7 +18,16 @@ var config = {
             subtitle: '',
             image: '',
             description: ` <h5>By Nicole Shih</h5>   
-            <p>North Phoenix’s Loop 101 corridor is in the middle of one of its biggest growth cycles in decades. From Desert Ridge’s new headquarters campuses and two major new hospital constructions to fresh experiments in the Scottsdale Airpark, the stretch of freeway between 51st Street and Hayden Road is filling up with construction sites, development proposals, and high profile tenants that together tell a story about the Valley’s growth. What’s driving it is a mix of job growth, new corporate campuses, and a surge of mix-used development that are transforming the area into a “live-work-play” hub in the North Phoenix. Tens of thousands of jobs remain anchored at Scottsdale Airpark, while projects like Cavasson and Sprouts’ new campus are pulling in fresh investment and residents at a clip that’s making this corridor one of the most dynamic real estate markets in metro Phoenix. </p> `, 
+            <p>North Phoenix’s Loop 101 corridor is in the middle of one of its biggest growth cycles in decades. From Desert Ridge’s new headquarters campuses and two major new hospital constructions to fresh experiments in the Scottsdale Airpark, the stretch of freeway between 51st Street and Hayden Road is filling up with construction sites, development proposals, and high profile tenants that together tell a story about the Valley’s growth. What’s driving it is a mix of job growth, new corporate campuses, and a surge of mix-used development that are transforming the area into a “live-work-play” hub in the North Phoenix. Tens of thousands of jobs remain anchored at Scottsdale Airpark, while projects like Cavasson and Sprouts’ new campus are pulling in fresh investment and residents at a clip that’s making this corridor one of the most dynamic real estate markets in metro Phoenix. </p> <p style="
+      border-left: 4px solid #ed1b34;
+      padding-left: 12px;
+      margin: 8px 0;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      line-height: 1.55;
+    ">
+      <em><b>Scroll down to continue.</b> <br>For the best experience, view this interactive map on desktop.</em>
+    </p>`, 
             
             location: {
                 center: [-111.93,33.645],
@@ -207,7 +216,7 @@ var config = {
         {id: 'all',
             alignment: 'right',
             hidden: false,
-            description:'<span style="font-size: 14px;">© Colliers International, 2025. All rights reserved.</span>',
+            description:'<span style="font-size: 12px;">© Colliers International, 2025. All rights reserved.</span>',
             location: {
                 center: [ -111.93,33.645],
                 zoom: 12,
