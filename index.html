@@ -46,12 +46,12 @@
 
     .poi-marker{ pointer-events:auto; }
     .poi-dot{
-      width:20px; height:20px; background:#e11d48; border:2px solid #fff; border-radius:50%;
+      width:18px; height:18px; background:#e11d48; border:1.5px solid #fff; border-radius:50%;
       box-shadow:0 0 6px rgba(0,0,0,.25); cursor:pointer;
       transition:transform .12s ease, background-color .12s ease, box-shadow .12s ease;
     }
     .poi-dot:hover{ transform:scale(1.35); background:#be123c; box-shadow:0 0 10px rgba(0,0,0,.4); }
-    .poi-dot.blue{ width:25px; height:25px; background:#2563eb; border:2px solid #fff; border-radius:50%; box-shadow:0 0 6px rgba(0,0,0,.25); }
+    .poi-dot.blue{ width:25px; height:25px; background:#2563eb; border:1.5px solid #fff; border-radius:50%; box-shadow:0 0 6px rgba(0,0,0,.25); }
     .poi-marker:hover .poi-dot.blue{ transform:scale(1.3); background:#1e40af; }
     .poi-dot.circled{
       box-shadow:0 0 0 5px rgba(255,59,48,.95),0 0 10px rgba(0,0,0,.55),0 0 18px rgba(255,59,48,.85);
@@ -394,7 +394,7 @@ setMapInteractive(false);
       {"type":"Feature","properties":{"name":"Cavasson East","desc":"18700 N Hayden Road"},"geometry":{"type":"Point","coordinates":[-111.90919129839082,33.65605347993039]}},
       {"type":"Feature","properties":{"name":"Hilton Hotel","desc":""},"geometry":{"type":"Point","coordinates":[-111.90869501725943,33.658382402589154]}},
       {"type":"Feature","properties":{"name":"Axis Raintree","desc":"8605 E Raintree Dr"},"geometry":{"type":"Point","coordinates":[-111.89428796152342,33.617995783187396]}},
-      {"type":"Feature","properties":{"name":"Mack Innovation Park","desc":"Toy Barn is moving forward with a 10-acre, 205,000-square-foot site at Mack Innovation Park, where it plans to start construction in winter 2025 on a high-end garage condo project."},"geometry":{"type":"Point","coordinates":[-111.88906127197775,33.64408980520355]}},
+      {"type":"Feature","properties":{"name":"Mack Innovation Park","desc":""},"geometry":{"type":"Point","coordinates":[-111.88906127197775,33.64408980520355]}},
       {"type":"Feature","properties":{"name":"Mayo Clinic","desc":""},"geometry":{"type":"Point","coordinates":[-111.94957321268495,33.66174827458897]}},
       {"type":"Feature","properties":{"name":"The Loop","desc":"17799 N 85th St <p>Expected to complete in late 2026.</p>"},"geometry":{"type":"Point","coordinates":[-111.89639994604005,33.64853559679908]}},
       {"type":"Feature","properties":{"name":"Axon's campus","desc":"Thanks to Senate Bill 1543, Axon can add 1,900 housing units and a hotel to its light-industrial site without going through a citywide referendum, but the Scottsdale City Council is now considering suing the state."},"geometry":{"type":"Polygon","coordinates":[[
@@ -682,6 +682,135 @@ setMapInteractive(false);
         ],
         "type": "Polygon"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            -111.88877550426524,
+            33.64040569316053
+          ],
+          [
+            -111.89085432023619,
+            33.64517454121804
+          ],
+          [
+            -111.89076192841542,
+            33.64778960381278
+          ],
+          [
+            -111.88932985519077,
+            33.6483664451618
+          ],
+          [
+            -111.88722794126417,
+            33.64823184919237
+          ],
+          [
+            -111.88722794126417,
+            33.64369391908714
+          ],
+          [
+            -111.88505673347245,
+            33.64363623199537
+          ],
+          [
+            -111.88501053756163,
+            33.64140563480055
+          ],
+          [
+            -111.88708935353303,
+            33.64138640526318
+          ],
+          [
+            -111.88708935353303,
+            33.64046338241684
+          ],
+          [
+            -111.88877550426524,
+            33.64040569316053
+          ]
+        ],
+        "type": "LineString"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "Choice Hotels International",
+        "desc": "150,000 SF office building"},
+      "geometry": {
+        "coordinates": [
+          -111.91186340210888,
+          33.65704683233632
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "Meritage Homes Corporation",
+        "desc": "60,000 SF available"},
+      "geometry": {
+        "coordinates": [
+          -111.91104629623561,
+          33.656651116933176
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "Toy Barn",
+        "desc": "Toy Barn is moving forward with a 10-acre, 205,000-square-foot site at Mack Innovation Park, where it plans to start construction in winter 2025 on a high-end garage condo project."},
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -111.88476356693855,
+              33.64342325231212
+            ],
+            [
+              -111.88467031711542,
+              33.640335223122264
+            ],
+            [
+              -111.88181065587975,
+              33.640266215618425
+            ],
+            [
+              -111.88476356693855,
+              33.64342325231212
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {"name": "One North Scottsdale Apartment",
+        "desc": ""},
+      "geometry": {
+        "coordinates": [
+          -111.92220362009041,
+          33.668245789617714
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "Avion On Lrgacy Apartments Scottsdale",
+        "desc": ""},
+      "geometry": {
+        "coordinates": [
+          -111.92220362009041,
+          33.66569061428564
+        ],
+        "type": "Point"
+      }
     }
     ]};
     sitesFC_cache = sitesFC;
@@ -696,7 +825,7 @@ setMapInteractive(false);
     if (!map.getLayer("sites-fill")) {
       map.addLayer({ id:"sites-fill", type:"fill", source:"sites",
         filter:["==",["geometry-type"],"Polygon"],
-        paint:{ "fill-color":"#25408f", "fill-opacity":0.35 } });
+        paint:{ "fill-color":"#ed1b34", "fill-opacity":0.35 } });
     }
     if (!map.getLayer("sites-outline")) {
       map.addLayer({ id:"sites-outline", type:"line", source:"sites",
@@ -707,7 +836,7 @@ setMapInteractive(false);
       map.addLayer({ id:"sites-lines", type:"line", source:"sites",
         filter:["==",["geometry-type"],"LineString"],
         layout:{ "line-join":"round", "line-cap":"round" },
-        paint:{ "line-color":"#ed1b34", "line-width":3 } });
+        paint:{ "line-color":"#ED1b34", "line-width":2 } });
     }
 
     // Point markers
