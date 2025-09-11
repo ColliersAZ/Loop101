@@ -26,7 +26,7 @@ var config = {
       font-family: Arial, sans-serif;
       line-height: 1.55;
     ">
-      <em><b>Scroll down to continue.</b> <br>For the best experience, view this interactive map on desktop.</em>
+      <b>Scroll down to continue.</b> <br><em>For the best experience, view this interactive map on desktop.</em>
     </p>`, 
             
             location: {
